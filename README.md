@@ -31,6 +31,19 @@ The datasets used here are taken from UCI Machine Learning Repository
  - [Hayes-Roth Dataset](https://archive.ics.uci.edu/ml/datasets/Hayes-Roth)
  - [Car Evaluation Dataset](https://archive.ics.uci.edu/ml/datasets/Car+Evaluation)
  - [Breast Cancer Dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer)
+ 
+Car Evaluation and Breast cancer datasets contain text attributes. As we cannot run the classifier on text attributes, we need to convert categorical input features. This is done using `LabelEncoder` of `sklearn.preprocessing`. Label encoder can be applied on a dataframe or a list
+**Applying LabelEncoder on entire dataframe**
+```
+from sklearn import preprocessing
+
+df = pd.DataFrame(data)
+df = df.apply(preprocessing.LabelEncoder().fit_transform)
+```
+**Applying LabelEncoder on a list**
+```
+labels = preprocessing.LabelEncoder().fit_transform(inputList)
+```
 
 #### References
 - More info on Cross Validation can be seen [here](https://medium.com/datadriveninvestor/k-fold-and-other-cross-validation-techniques-6c03a2563f1e)
