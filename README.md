@@ -32,7 +32,8 @@ The datasets used here are taken from UCI Machine Learning Repository
  - [Car Evaluation Dataset](https://archive.ics.uci.edu/ml/datasets/Car+Evaluation)
  - [Breast Cancer Dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer)
  
-Car Evaluation and Breast cancer datasets contain text attributes. As we cannot run the classifier on text attributes, we need to convert categorical input features. This is done using `LabelEncoder` of `sklearn.preprocessing`. Label encoder can be applied on a dataframe or a list
+Car Evaluation and Breast cancer datasets contain text attributes. As we cannot run the classifier on text attributes, we need to convert categorical input features. This is done using `LabelEncoder` of `sklearn.preprocessing`. LabelEncoder can be applied on a dataframe or a list. LabelEncoder encodes labels with value between 0 and n_classes-1.
+
 **Applying LabelEncoder on entire dataframe**
 ```
 from sklearn import preprocessing
