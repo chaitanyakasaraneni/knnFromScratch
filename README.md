@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This repository consists of code and example implementations for my medium article on building k-Nearest Neighbors from scratch and evaluating it using k-Fold Cross validation which is also built from scratch.
+This repository consists of code and example implementations for my [medium article on building k-Nearest Neighbors from scratch and evaluating it using k-Fold Cross validation which is also built from scratch](https://link.medium.com/BV27Pox3qab)
 
 ![Neighbors](https://github.com/chaitanyakasaraneni/knnFromScratch/blob/master/images/neighbors.jpg)
 <p align="center">Neighbors (Image Source: <a href="https://www.freepik.com/free-vector/apartment-building-with-people-open-window-spaces_7416533.htm#page=1&query=neighbors&position=2">Freepik</a>)</p>
